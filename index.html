@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculadora de tinta</title>
+</head>
+
+<body>
+
+
+    <h1>Calculadora de rendimento para tintas</h1>
+
+    <div class="container">
+        <table>
+            <div class="box-nome">
+                <tr>
+                    <td id="td-nome"><label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome">
+                        <label for="tel" id="tel">Telefone</label>
+                        <input type="tel" name="" id="tel" onkeypress="$(this).mask('(00)00000-0009')"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email"></td>
+                </tr>
+            </div>
+            <div class="box">
+                <tr>
+                    <td class="td-parede"><label id="alt" for="altura">Parede:Altura:</label>
+                        <input type="number" name="altura" id="a">
+                        <label id="com" for="comprimento">Comprimento:</label>
+                        <input type="number" name="comprimento" id="c">
+                        <label id="q" for="comprimento">Quantidade:</label>
+                        <input type="number" name="comprimento" id="quan" placeholder="1"></td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td><label for="alturaj">Janela: Altura:</label>
+                        <input type="number" name="" id="aj">
+                        <label for="">Comprimento:</label>
+                        <input type="number" name="" id="cj">
+                        <label for="">Quantidade:</label>
+                        <input type="number" name="" id="qj"></td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td><label for="">Portas: Altura:</label>
+                        <input type="number" name="" id="ap">
+                        <label for="">Comprimento:</label>
+                        <input type="number" name="" id="cp">
+                        <label for="">Quantidade:</label>
+                        <input type="number" name="" id="qp"></td>
+                </tr>
+            </div>
+
+
+            <div class="box2">
+                <tr>
+                    <td><label for="rendi">Rendimento da tinta(m²):</label>
+                        <input type="number" name="rendi" id="rendi" placeholder="200">
+                        <label for="dem">Quantidade de demãos:</label>
+                        <input type="number" name="quanti" id="demao" placeholder="2"></td>
+                </tr>
+            </div>
+            <div class="botoes">
+                <tr>
+                    <td id="td-botoes"><button id="b1">Calcular</button>
+                        <button id="b2">Limpar</button></td>
+                </tr>
+            </div>
+            <div class="r">
+                <tr>
+                    <td id="area"> <textarea class="resp" name="" id="" cols="40" rows="3"></textarea></td>
+                </tr>
+            </div>
+
+
+    </div>
+    </table>
+
+
+    <script src="./js/tinta.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</body>
+
+</html>
