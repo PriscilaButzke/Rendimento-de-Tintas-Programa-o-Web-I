@@ -36,42 +36,51 @@ b2.addEventListener('click', limpar);
             qp.value ="";
             r.innerHTML= (`Campos limpos com sucesso!`);
         }
-b1.addEventListener('click', ()=>{
-        let al = (a.value);
-        let co = (c.value);
-        let q =(quan.value);
-            if( q <=0){
-                q =1;
-            }else
-                q = (quan.value);
-            
-        let rend =(rendi.value);
-            if( rend <=0){
-                rend = 200;
-            }else 
-                rend = (rendi.value);
 
-        let dem = (demao.value);
-            if( dem <=0){
-                dem = 2;
-            }else 
-                dem = (demao.value);
+b1.addEventListener('click', calcular);
+        function calcular(){
+            if( a.value =="" && c.value == ""){
+                r.innerHTML=` Preencha corretamente os campos de altura e comprimento da parede`
 
-        let aja = (aj.value);
-        let cja = (cj.value);
-        let qja = (qj.value);
-        let metrosjanela =(aja * cja * qja);
+            }else{
+                let al = (a.value);
+                let co = (c.value);
+                let q =(quan.value);
+                    if( q <=0){
+                        q =1;
+                    }else
+                        q = (quan.value);
+                    
+                let rend =(rendi.value);
+                    if( rend <=0){
+                        rend = 200;
+                    }else 
+                        rend = (rendi.value);
 
-        let apo = (ap.value);
-        let cpo = (cp.value);
-        let qpo = (qp.value);
-        let metrosporta = ( apo * cpo * qpo); 
+                let dem = (demao.value);
+                    if( dem <=0){
+                        dem = 2;
+                    }else 
+                        dem = (demao.value);
 
-        let m = (((al * co)*q)-metrosporta - metrosjanela );
+                let aja = (aj.value);
+                let cja = (cj.value);
+                let qja = (qj.value);
+                let metrosjanela =(aja * cja * qja);
 
-        let rendimento = ( rend/dem);
-        let resul = ( m / rendimento);
+                let apo = (ap.value);
+                let cpo = (cp.value);
+                let qpo = (qp.value);
+                let metrosporta = ( apo * cpo * qpo); 
 
-        r.innerHTML=` Quantidade de tinta necessária:
-        ${resul}  litros.`
-        })
+                let m = (((al * co)*q)-metrosporta - metrosjanela );
+
+                let rendimento = ( rend/dem);
+                let resul = ( m / rendimento);
+
+                r.innerHTML=` Quantidade de tinta necessária:
+                ${resul}  litros.`
+
+            }
+        }
+
