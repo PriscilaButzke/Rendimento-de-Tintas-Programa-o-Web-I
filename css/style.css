@@ -21,11 +21,11 @@ body{
     width: 180px;
 }
 #email{
-    width: 480px;
+    width: 575px;
 }
 h1{
     text-align: center;
-    text-shadow: 3px 2px 3px white;
+    text-shadow: 3px 2px 3px #f1e9e3;
     font-size: 30pt;
     position: relative;
     top: 15px;
@@ -36,6 +36,7 @@ input{
     margin: 0 auto;
     text-align: center;
     border-radius: 6px;
+    background-color: #f1e9e3;
 }
 label{
     width: 200px;
@@ -44,6 +45,7 @@ label{
     margin: 0 auto;
     font-weight: 900;
     font-size: 13pt;
+    text-shadow: 2px 2px 3px #f1e9e3;
 }
 
 #alt{
@@ -59,7 +61,7 @@ button{
     margin: 0 auto;
     font-weight: 900;
     cursor: pointer;
-    background-color: #FDEBF7; 
+    background-color: #f1e9e3; 
 }
 
 #b1{
@@ -71,10 +73,11 @@ button{
     margin-top: 20px;
 }
 button:hover{
-    background-color: #FF5F00;
+    background-color: #B20600;
+    text-decoration:underline;
 }
 .resp{
-    background-color: #FDEBF7;
+    background-color: #f1e9e3;
     text-align: center;
     border-radius: 20px;
    font-weight: 900;
@@ -82,7 +85,6 @@ button:hover{
 #rendi{
 margin-right: 20PX;
 }
-
 td{
     width: 800px ;
     height: 8px;
@@ -90,6 +92,15 @@ td{
 }
 #tel{
     margin-left: 15px;
+}
+table{
+    width: 641px;
+}
+#td_botoes, #area{
+    text-align: center;
+}
+#box3{
+    text-align: right;
 }
 
 
